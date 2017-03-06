@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Result</title>
+		<script type="text/javascript">
+			var image1=new Image()
+			image1.src="computer.jpg"
+			var image2=new Image()
+			image2.src="light.jpg"
+			var image3=new Image()
+			image3.src="mypic.jpg"
+		</script>
+	</head>
+	<body>
+		<div id="header">
+			<div id="navbar">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index2.html">About me</a></li>
+					<li><a href="index3.html">Portfolio</a></li>
+					<li><a href="index4.html">Contact</a></li>
+				</ul>
+			</div>
+			<h2>WELCOME TO MY PAGE</h2>
+		</div>
+		<div id="center">
+		<img src="computer.jpg" name="slide" width="400" height="400">
+			<script type="text/javascript">
+				var step=1
+				function slideit(){
+				document.images.slide.src=eval("image"+step+".src")
+				if(step<3)
+				step++
+				else
+				step=1
+				setTimeout("slideit()",2500)
+				}
+				slideit()
+			</script>
+		</div>
+		
+		<div id="footer">
+			
+		</div>
+	</body>
+</html>
